@@ -21,3 +21,4 @@
 go.work
 .vscode/
 wol/wol
+.DS_Store
