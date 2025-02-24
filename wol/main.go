@@ -29,7 +29,7 @@ All flags available:`)
 		flag.PrintDefaults()
 	}
 
-	var addr = flag.String("addr", "255.255.255.255:6", "The UDP address to send the packet")
+	var addr = flag.String("addr", "255.255.255.255:7", "The UDP address to send the packet")
 	var pass = flag.String("pass", "", "The SecureOn password")
 	flag.Parse()
 

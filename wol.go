@@ -48,12 +48,12 @@ func SendUDP(addr string, macAddr net.HardwareAddr, password *[6]byte) error {
 	return err
 }
 
-// Wake sends a WOL magic packet to 255.255.255.255:6 through UDP network.
+// Wake sends a WOL magic packet to 255.255.255.255:7 through UDP network.
 // macAddr is the MAC address of the destination device.
 func Wake(macAddress string) error {
 	mac, err := net.ParseMAC(macAddress)
 	if err != nil {
 		return err
 	}
-	return SendUDP(net.IPv4bcast.String()+":6", mac, nil)
+	return SendUDP(net.IPv4bcast.String()+":7", mac, nil)
 }
